@@ -10,7 +10,7 @@ Here, I share code, notes, and solutions to the challenges presented throughout 
 
 ## 📂 Repository Structure
 
-- **solution/** → Folder containing the solutions to the problems presented during the course.  
+- **Solutions/** → Folder containing the solutions to the problems presented during the course.  
 
 ---
 
