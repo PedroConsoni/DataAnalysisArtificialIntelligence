@@ -1,4 +1,4 @@
-**O README que você está acessando está em inglês, caso prefira acessar o README em Português-BR, [clique aqui](README-PT-BR.md)**
+***O README que você está acessando está em inglês, caso prefira acessar o README em Português-BR, [clique aqui](README-PT-BR.md)***
 
 # 📊 Data Analysis and Artificial Intelligence Course
 
