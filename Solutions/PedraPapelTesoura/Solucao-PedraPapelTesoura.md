@@ -18,10 +18,10 @@ O resultado final será exibido mostrando se houve vitória, derrota ou empate.
 ---
 ## 🚀 Como usar
 
-1. Clone o repositório ou baixe o arquivo `calculadora_imc.py`.  
+1. Clone o repositório ou baixe o arquivo `PedraPapelTesoura.py`.  
 2. Execute o arquivo no Python:
 ```
-python calculadora_imc.py
+python PedraPapelTesoura.py
 ```
 
 ## 🛠 Tecnologias
