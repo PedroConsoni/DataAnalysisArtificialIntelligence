@@ -10,7 +10,7 @@ Nele, compartilho códigos, anotações e soluções dos desafios propostos ao l
 
 ## 📂 Estrutura do Repositório
 
-- **solution/** → Pasta destinada às resoluções dos problemas apresentados durante o curso.  
+- **Solutions/** → Pasta destinada às resoluções dos problemas apresentados durante o curso.  
 
 ---
 
