@@ -168,7 +168,7 @@ J     \         /._           /        -tI/ |
                 print("Fim de jogo!")
         elif vermelhaOuAzul == "Azul":
             print("Você entra na câmara e logo acha estranho o quão vazio ela está.")
-            print("Você pensa o que pode estar acontecendo mas já é tarde demais.")
+            print("Você  pensa o que pode estar acontecendo mas já é tarde demais.")
             print("Fantasmas aparecem por todos os lados e você não tem pra onde correr.")
             print(r"""                  .-.
          heehee      /aa \_

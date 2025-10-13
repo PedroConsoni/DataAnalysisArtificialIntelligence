@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 
 
-# CÓDIGO DE PREPARAÇÃO DO ARQUIVO
+# FILE PREPARATION CODE
 csv_data = """Nome,Disciplina,Nota,Faltas
 João,Matemática,8.5,2
 Maria,História,9.2,0
@@ -81,4 +81,4 @@ average = df.groupby('Disciplina').agg({'Nota': 'mean'})
 highest_average_discipline = average['Nota'].idxmax()
 highest_average = average['Nota'].max()
 
-print("A disciplina com maior média é: ", highest_average_discipline, "e sua média foi: ", highest_average)
+print("The subject with the highest average is: ", highest_average_discipline, "and your average was: ", highest_average)
