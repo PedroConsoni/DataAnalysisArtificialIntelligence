@@ -13,9 +13,9 @@ O foco foi compreender como trabalhar com **estruturas tabulares** e **operaçõ
 
 ## Tecnologias Utilizadas
 
-- 🐍 **Python 3**
-- 📘 **Pandas**
-- 🧾 **CSV (Comma-Separated Values)**
+- **Python 3**
+- **Pandas**
+- **CSV (Comma-Separated Values)**
 
 ---
 
