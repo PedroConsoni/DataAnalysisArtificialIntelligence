@@ -11,7 +11,7 @@ O foco foi compreender como trabalhar com **estruturas tabulares** e **operaçõ
 
 ---
 
-## Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 - **Python 3**
 - **Pandas**
