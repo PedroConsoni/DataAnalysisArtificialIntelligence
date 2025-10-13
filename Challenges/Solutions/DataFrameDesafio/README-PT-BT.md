@@ -4,14 +4,14 @@ Este repositório faz parte do **curso de Análise de Dados e Inteligência Arti
 
 ---
 
-## 🧠 Objetivo do Desafio
+## Objetivo do Desafio
 
 O desafio tinha como proposta **analisar dados de alunos e disciplinas** a partir de um arquivo CSV, aplicando técnicas básicas de filtragem, agrupamento e agregação de dados.  
 O foco foi compreender como trabalhar com **estruturas tabulares** e **operações estatísticas** em Python.
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - 🐍 **Python 3**
 - 📘 **Pandas**
@@ -26,7 +26,7 @@ O foco foi compreender como trabalhar com **estruturas tabulares** e **operaçõ
 
 ---
 
-## 🧩 Etapas do Desafio
+## Etapas do Desafio
 
 ### 1️⃣ Leitura do arquivo CSV  
 O arquivo `notas.csv` foi lido utilizando a biblioteca **csv** e **pandas**, garantindo compatibilidade com caracteres especiais (encoding `latin-1`).
@@ -78,10 +78,8 @@ highest_average = average['Nota'].max()
 print("The subject with the highest average is:", highest_average_discipline, "and your average was:", highest_average)
 ```
 
-📈 Resultados
+## Resultados
 
-O código exibe todas as etapas de análise de forma organizada.
-
-Mostra os alunos aprovados, as médias por disciplina e a disciplina com melhor desempenho geral.
-
-Demonstra o uso de operações condicionais, agregações estatísticas e leitura de arquivos CSV — habilidades essenciais em análise de dados.
+- O código exibe todas as etapas de análise de forma organizada.
+- Mostra os alunos aprovados, as médias por disciplina e a disciplina com melhor desempenho geral.
+- Demonstra o uso de operações condicionais, agregações estatísticas e leitura de arquivos CSV — habilidades essenciais em análise de dados.
