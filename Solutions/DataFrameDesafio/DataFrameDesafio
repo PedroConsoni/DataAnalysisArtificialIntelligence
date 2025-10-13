@@ -1,0 +1,84 @@
+import csv
+import pandas as pd
+
+
+# CÓDIGO DE PREPARAÇÃO DO ARQUIVO
+csv_data = """Nome,Disciplina,Nota,Faltas
+João,Matemática,8.5,2
+Maria,História,9.2,0
+Pedro,Matemática,5.0,5
+Ana,Geografia,7.8,1
+Carlos,Matemática,9.0,0
+Sofia,História,6.5,3
+Alice,Matemática,7.0,1
+Bruno,Geografia,8.1,0
+Clara,História,7.5,2
+Daniel,Matemática,6.0,4
+Eduarda,Geografia,9.5,0
+Fernando,História,8.8,1
+Gustavo,Matemática,7.2,3
+Heloísa,Geografia,6.9,2
+Igor,História,9.8,0
+Julia,Matemática,5.5,5
+Leonardo,Geografia,7.1,1
+Manuela,História,8.3,0
+Nathan,Matemática,6.8,4
+Olívia,Geografia,9.0,0
+Paulo,História,7.6,2
+Rafael,Matemática,8.0,1
+Sofia,Geografia,6.0,3
+Thiago,História,9.1,0
+Vitória,Matemática,5.8,5
+Xavier,Geografia,7.4,1
+Yasmin,História,8.7,0
+Zeca,Matemática,6.3,4
+Amanda,Geografia,9.3,0
+Bernardo,História,7.9,2
+Carolina,Matemática,8.2,1
+"""
+with open('notes.csv', 'w') as f:
+    f.write(csv_data)
+
+
+
+# 1. Read the CSV file
+# The 'utf-8' encoding is good practice for files with special characters.
+
+with open('notes.csv', 'r', encoding='latin-1') as f:
+    reader = csv.reader(f)
+    for line in reader:
+        print(line)
+
+
+# 2. Create the conditional filter and the new DataFrame
+# Use of & (logical AND) and parentheses for clarity and precedence.
+
+print("------------------------------------------------------------------------------------------------------------------------------------------------")
+df = pd.read_csv('notas.csv', encoding='latin-1')
+filter = (df['Disciplina'] == 'Matemática') & (df['Nota'] > 7)
+df_filtered   = df[filter]
+print(df_filtered)
+
+
+# 3. Display the Approved DataFrame
+
+print("------------------------------------------------------------------------------------------------------------------------------------------------")
+approved_students = df[df['Nota'] >= 6]
+print(approved_students)
+
+
+# 4. Calculate average grades and sum of absences by subject
+
+print("------------------------------------------------------------------------------------------------------------------------------------------------")
+average_sum = df.groupby('Disciplina').agg({'Nota': 'mean', 'Faltas': 'sum'})
+print(average_sum)
+
+
+# 5. Find the subject with the highest average grade
+
+print("------------------------------------------------------------------------------------------------------------------------------------------------")
+average = df.groupby('Disciplina').agg({'Nota': 'mean'})
+highest_average_discipline = average['Nota'].idxmax()
+highest_average = average['Nota'].max()
+
+print("A disciplina com maior média é: ", highest_average_discipline, "e sua média foi: ", highest_average)
